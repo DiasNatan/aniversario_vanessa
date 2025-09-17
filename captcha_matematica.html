@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA de Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <h2>CAPTCHA de Matemática</h2>
+        <p>Por favor, resolva a seguinte operação:</p>
+        <div class="captcha-question" id="captchaQuestion"></div>
+        <input type="text" id="captchaInput" placeholder="Sua resposta">
+        <button id="verifyButton">Avançar</button>
+        <p class="message" id="captchaMessage"></p>
+        <button id="refreshButton" style="display: none;">Gerar Novo CAPTCHA</button>
+    </div>
+
+    <script src="script_matematica.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Identidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <h2>Verificação de Identidade</h2>
+        <p>Você é a Vanessa?</p>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="isVanessa">
+            <label for="isVanessa">Sim, sou a Vanessa</label>
+        </div>
+        <button id="nextButton">Avançar</button>
+        <p class="message" id="message"></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const isVanessaCheckbox = document.getElementById('isVanessa');
+            const nextButton = document.getElementById('nextButton');
+            const messageElement = document.getElementById('message');
+
+            nextButton.addEventListener('click', () => {
+                if (isVanessaCheckbox.checked) {
+                    window.location.href = 'captcha_matematica.html';
+                } else {
+                    messageElement.textContent = 'Por favor, marque a caixa para avançar.';
+                    messageElement.classList.add('error');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

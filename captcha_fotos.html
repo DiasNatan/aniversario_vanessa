@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA de Fotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <h2>CAPTCHA de Fotos</h2>
+        <p>Por favor, selecione as imagens que melhor representam uma pessoa mais velha: <span id="targetPhotos"></span></p>
+        <div class="image-grid" id="imageGrid">
+            <!-- As imagens serão carregadas aqui pelo JavaScript -->
+        </div>
+        <button id="verifyButton">Avançar</button>
+        <p class="message" id="captchaMessage"></p>
+    </div>
+
+    <script src="script_fotos.js"></script>
+</body>
+</html>
